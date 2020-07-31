@@ -79,8 +79,6 @@ def topk_similar_in_db(file_path, file_format, model_name, include_node_attrs,
     # Cosine similarity
     similarity = metrics.pairwise.cosine_similarity(
         [embeddings[len(embeddings) - 1]], embeddings)
-
-    print(similarity)
     
     model_graph = model_graphs[len(model_graphs) - 1]
 
